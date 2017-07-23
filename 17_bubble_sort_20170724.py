@@ -2,9 +2,13 @@ def bubble_sort(l):
     n = len(l)
     for j in range(n-1):
         # 用于判断此轮遍历过程中各元素之间的位置是否发生了改变
+        has_change = False
         for i in range(n-1-j):
             if l[i] > l[i+1]:
                 l[i+1], l[i] = l[i], l[i+1]
+                has_change = True
+        if has_change == False:
+            break
 
 
 if __name__ == '__main__':
