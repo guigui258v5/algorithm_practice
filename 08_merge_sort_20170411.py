@@ -1,16 +1,20 @@
 def merge_sort(alist):
     n = len(alist)
     if n <= 1:
+        print(alist)
         return alist
     mid_posi = n//2
+    print(1)
     llist = merge_sort(alist[:mid_posi])
+    print(2)
     rlist = merge_sort(alist[mid_posi:])
+    print(3)
 
     lposi = 0
     rposi = 0
     sorted_list = []
-    # print('llist', llist)
-    # print('rlist', rlist)
+    print('llist', llist)
+    print('rlist', rlist)
     while lposi < len(llist) and rposi < len(llist):
         if llist[lposi] <= rlist[rposi]:
             sorted_list.append(llist[lposi])
