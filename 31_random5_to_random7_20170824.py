@@ -11,7 +11,7 @@ def random_7():
     while True:  # 避免没有返回值
         n = (random_5()-1)*5 + random_5()  # 生成１～２５的随机数
         if n <= 21:
-            return n%7 + 1
+            return n % 7 + 1
 
 
 if __name__ == '__main__':
