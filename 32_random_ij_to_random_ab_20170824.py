@@ -33,17 +33,17 @@ class RandomIJToRandomAB(object):
 
 
 if __name__ == '__main__':
-    print('0~1随机生成函数转化为２~11随机生成函数')
+    print('0~1随机生成函数转化为2~11随机生成函数')
     random_1 = RandomIJToRandomAB(0, 1)
     print(random_1.random_ab(2, 11))
     print('-'*50)
 
-    print('1~5随机生成函数转化为１~7随机生成函数')
+    print('1~5随机生成函数转化为1~7随机生成函数')
     random_1_5 = RandomIJToRandomAB(1, 5)
     print(random_1_5.random_ab(1, 7))
     print('-'*50)
 
-    print('1~7随机生成函数转化为１~5随机生成函数')
+    print('1~7随机生成函数转化为1~5随机生成函数')
     random_1_7 = RandomIJToRandomAB(1, 7)
     print(random_1_7.random_ab(1, 5))
     print('-'*50)
