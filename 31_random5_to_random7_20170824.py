@@ -9,8 +9,8 @@ def random_5():
 # 要获得的生成１～７随机数的函数
 def random_7():
     while True:  # 避免没有返回值
-        n = (random_5()-1)*5 + random_5()  # 生成１～２５的随机数
-        if n <= 21:
+        n = (random_5()-1)*5 + random_5()-1  # 生成0～24的随机数
+        if n <= 20:
             return n % 7 + 1
 
 
